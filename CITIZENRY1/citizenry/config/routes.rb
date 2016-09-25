@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :petitions
-root to: redirect('/comments')
   resources :comments
+root to: redirect('/petitions')
+  resources :petitions
 end
