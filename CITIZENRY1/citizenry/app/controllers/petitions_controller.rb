@@ -10,6 +10,8 @@ class PetitionsController < ApplicationController
   # GET /petitions/1
   # GET /petitions/1.json
   def show
+    @comments = @idea.comments.all
+  @comment = @idea.comments.build
   end
 
   # GET /petitions/new
