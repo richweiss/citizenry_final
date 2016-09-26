@@ -1,7 +1,14 @@
 class ArticlesController < ApplicationController
 
   def index
-    @articles = Article.all
+    root_url = "https://api.whitehouse.gov/v1/petitions.json?"
+    if (params[:search_term])
+       @petitions = HTTParty.get("#{root_url}title=#{params[:search_term]}")
+       @articles = Article.all
+    else
+      @articles = Article.all
+      @petitions = HTTParty.get(root_url)
+    end
   end
 
   def show

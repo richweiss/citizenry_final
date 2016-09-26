@@ -1,7 +1,18 @@
 <h1>Petition List</h1>
 
-<%= link_to 'New Petition', new_article_path %>
 
+
+<% @petitions["results"].each do |petition| %>
+  <a href=<%=petition["url"]%>><h2><%= petition["title"] %></h2></a>
+  <span>Categories: <%=petition["issues"].inject(""){|prev, curr| prev += "- #{curr["name"]}"} %></span>
+  <p><%= petition["body"] %></p>
+  <p>Signature Count: <%= petition["signatureCount"] %></p>
+  <p>Signatured Needed: <%=petition["signaturesNeeded"] %> </p>
+
+<% end %>
+
+
+<%= link_to 'New Petition', new_article_path %>
 <table>
   <tr>
     <th>Title</th>
