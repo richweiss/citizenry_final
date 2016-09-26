@@ -1,4 +1,4 @@
-<div class="homepage-hero-module">
+<!-- <div class="homepage-hero-module">
     <div class="video-container">
         <div class="filter"></div>
         <video autoplay loop class="fillWidth">
@@ -54,12 +54,12 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->
 
 
-<h1>Listing articles</h1>
+<h1>Petition List</h1>
 
-<%= link_to 'New article', new_article_path %>
+<%= link_to 'New Petition', new_article_path %>
 
 <table>
   <tr>
@@ -71,7 +71,7 @@
   <% @articles.each do |article| %>
     <tr>
       <td><%= article.title %></td>
-      <td><%= article.text %></td>
+      <td><%= article.content %></td>
       <td><%= link_to 'Show', article_path(article) %></td>
       <td><%= link_to 'Edit', edit_article_path(article) %></td>
       <td><%= link_to 'Destroy', article_path(article),
