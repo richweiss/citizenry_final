@@ -15,7 +15,7 @@ width: auto; height: auto;
 #container {
   margin-bottom: 5%;
   margin-left: 2%;
-  margin-top: 5%;
+  margin-top: 8%;
   margin-right: 20%;
 }
 
@@ -24,7 +24,7 @@ width: auto; height: auto;
   position: fixed;
   top: 15%;
   right: 1%;
-  border: 3px inset steelblue;
+  border: 3px groove steelblue;
   border-radius: 10px 10px 10px 10px;
   padding: 1%;
 }
