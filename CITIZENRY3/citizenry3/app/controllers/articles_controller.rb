@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-
+  # belongs_to :user
   http_basic_authenticate_with name: "Rich", password: "password", except: [:index, :show]
 
   def index
