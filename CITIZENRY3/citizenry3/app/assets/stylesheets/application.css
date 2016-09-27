@@ -20,11 +20,32 @@ width: auto; height: auto;
 }
 
 #newform {
+  font-size: 20px;
   position: fixed;
   top: 15%;
-  right: 10%;
+  right: 2%;
 }
 
+td {
+    line-height: 1em;
+}
+
+th {
+    line-height: 1em;
+}
+
+.linkoptions {
+    line-height: 1em;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* td {
+    border-right: 10px solid transparent;
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+} */
 
 /* video{
 position: fixed; right: 0; bottom: 0;
