@@ -16,7 +16,7 @@
 
 <div class="boxed">
   <div id="newform">
-    <h2><%= link_to 'Create a New Issue', new_article_path %></h2>
+    <h2><center><%= link_to 'Create a New Issue', new_article_path %></center></h2>
     <table>
       <tr>
         <th><u>Category</u></th>
@@ -29,8 +29,8 @@
         <tr>
           <td><%= article.title %></td>
           <td><%= article.content %></td>
-          <td class = linkoptions><%= link_to 'Show', article_path(article) %></td>
-          <td class = linkoptions><%= link_to 'Edit', edit_article_path(article) %></td>
+          <td class = linkoptions><%= link_to 'Dialogue', article_path(article) %></td>
+          <td class = linkoptions><%= link_to 'Fix', edit_article_path(article) %></td>
           <td class = linkoptions><%= button_to 'Delete', article_path(article),
                   method: :delete,
                   data: { confirm: 'Are you sure?' } %></td>

@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   end
 
   get "/search" => "articles#index"
+
+  get "/about" => "about#index"
 end
 
