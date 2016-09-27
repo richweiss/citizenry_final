@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
 
+  http_basic_authenticate_with name: "Rich", password: "password", except: [:index, :show]
+
   def index
     root_url = "https://api.whitehouse.gov/v1/petitions.json?"
     if (params[:search_term])
