@@ -31,7 +31,7 @@
           <td><%= article.content %></td>
           <td class="btn btn-primary btn-sm"><%= link_to 'Dialogue', article_path(article) %></td>
           <td class="btn btn-primary btn-sm"><%= link_to 'Fix', edit_article_path(article) %></td>
-          <td class="btn"><%= button_to 'Delete', article_path(article),
+          <td class="btn btn-primary btn-sm"><%= button_to 'Delete', article_path(article),
                   method: :delete,
                   data: { confirm: 'Are you sure?' } %></td>
         </tr>
