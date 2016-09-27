@@ -44,7 +44,16 @@ th {
     text-decoration: none;
 }
 
+p1 {
+  font-size: 30px;
+}
 
+#newcontainer {
+  margin-bottom: 5%;
+  margin-left: 2%;
+  margin-top: 8%;
+  margin-right: 16%;
+}
 
 /* td {
     border-right: 10px solid transparent;
