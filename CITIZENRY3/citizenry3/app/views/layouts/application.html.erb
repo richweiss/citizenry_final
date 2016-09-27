@@ -26,10 +26,11 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">About</a></li>
+        <li class="active"><a href="#">Recent Petitions <span class="sr-only">(current)</span></a></li>
         <li><a href="#">FAQ</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Topic Categories <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Popular Categories <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -54,19 +55,16 @@
   </div>
 </nav>
 
-<!-- Code to add Coverr video background. File paths must be fixed? -->
-<%= video_tag "Merica.mp4", :size => "320px240px" , :autoplay => true, :loop => true %>
 
-  <!-- <div class="homepage-hero-module">
-    <div class="video-container">
-        <div class="filter"></div>
-        <video autoplay loop class="fillWidth" poster="/images/Coverr/Snapshots/Merica.jpg">
-            <source src="/images/Coverr/MP4/Merica.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            <source src="/images/Coverr/WEBM/Merica.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-        </video>
-    </div>
-  </div> -->
-
+  <div id="container">
     <%= yield %>
+  </div>
+
+<!-- Code to add Coverr video background. File paths must be fixed? -->
+  <div id ="video">
+    <%= video_tag "Merica.mp4", :size => "320px240px" , :autoplay => true, :loop => true %>
+  </div>
+
+
   </body>
 </html>

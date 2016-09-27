@@ -1,34 +1,37 @@
-<h1>Petition List</h1>
+
+<div id="container">
+  <h1>Petition List</h1>
 
 
+  <% @petitions["results"].each do |petition| %>
+    <a href=<%=petition["url"]%>><h2><%= petition["title"] %></h2></a>
+    <span>Categories: <%=petition["issues"].inject(""){|prev, curr| prev += "- #{curr["name"]}"} %></span>
+    <p><%= petition["body"] %></p>
+    <p>Signature Count: <%= petition["signatureCount"] %></p>
+    <p>Signatured Needed: <%=petition["signaturesNeeded"] %> </p>
 
-<% @petitions["results"].each do |petition| %>
-  <a href=<%=petition["url"]%>><h2><%= petition["title"] %></h2></a>
-  <span>Categories: <%=petition["issues"].inject(""){|prev, curr| prev += "- #{curr["name"]}"} %></span>
-  <p><%= petition["body"] %></p>
-  <p>Signature Count: <%= petition["signatureCount"] %></p>
-  <p>Signatured Needed: <%=petition["signaturesNeeded"] %> </p>
-
-<% end %>
-
-
-<%= link_to 'New Petition', new_article_path %>
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-    <th colspan="2"></th>
-  </tr>
-
-  <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.content %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Destroy', article_path(article),
-              method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
-    </tr>
   <% end %>
-</table>
+
+
+  <h2><%= link_to 'New Petition', new_article_path %></h2>
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Text</th>
+      <th colspan="4"></th>
+    </tr>
+
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.title %></td>
+        <td><%= article.content %></td>
+        <td class = linkoptions><%= link_to 'Show', article_path(article) %></td>
+        <td class = linkoptions><%= link_to 'Edit', edit_article_path(article) %></td>
+        <td class = linkoptions><%= link_to 'Delete', article_path(article),
+                method: :delete,
+                data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
