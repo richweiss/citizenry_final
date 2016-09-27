@@ -12,6 +12,10 @@ Rails.application.routes.draw do
   end
 end
 
+  # devise_scope :user do
+  #   get '/signout', to: 'devise/sessions#destroy', as: :signout
+  # end
+
      resources :articles do
         resources :comments
 end
