@@ -19,6 +19,12 @@ width: auto; height: auto;
   margin-right: 20%;
 }
 
+#newform {
+  position: fixed;
+  top: 15%;
+  right: 10%;
+}
+
 
 /* video{
 position: fixed; right: 0; bottom: 0;
