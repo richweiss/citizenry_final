@@ -1,17 +1,18 @@
-<p>
-  <strong>Topic for Discussion:</strong>
+<p1>
+  <strong>Issue:</strong>
   <%= @article.title %>
 </p>
 
-<p>
-  <strong>Text:</strong>
+<p1>
+  <strong>What people are saying...</strong>
   <%= @article.content %>
 </p>
 
-<h2>Thoughts? Tell us!</h2>
+<h2>______________________________________________________</h2>
 <%= render @article.comments %>
+<h2>______________________________________________________</h2>
 
-<h2>Add a comment:</h2>
+<h2>Add comment:</h2>
 <%= render 'comments/form' %>
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
