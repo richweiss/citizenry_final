@@ -23,7 +23,7 @@ width: auto; height: auto;
   font-size: 20px;
   position: fixed;
   top: 15%;
-  right: 1%;
+  right: 0;
   border: 3px groove steelblue;
   border-radius: 10px 10px 10px 10px;
   padding: 0;
@@ -38,10 +38,8 @@ th {
     line-height: 1em;
 }
 
-.linkoptions {
-    line-height: 1em;
-    display: inline-block;
-    text-decoration: none;
+.btn {
+    margin: 1px;
 }
 
 p1 {
