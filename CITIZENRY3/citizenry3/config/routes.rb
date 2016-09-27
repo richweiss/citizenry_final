@@ -12,9 +12,9 @@ Rails.application.routes.draw do
   end
 end
 
-  # devise_scope :user do
-  #   get '/signout', to: 'devise/sessions#destroy', as: :signout
-  # end
+  devise_scope :user do
+    get '/users/sign_out', to: 'devise/sessions#destroy', as: :signout
+  end
 
      resources :articles do
         resources :comments
@@ -23,6 +23,8 @@ end
   get "/search" => "articles#index"
 
   get "/about" => "about#index"
+
+  #get "/users/sign_out" => "devise/sessions#destroy"
 
 
 end

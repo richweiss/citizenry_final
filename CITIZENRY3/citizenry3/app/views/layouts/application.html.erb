@@ -51,13 +51,6 @@
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Recent Searches</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<header>
-      <nav>
         <% if user_signed_in? %>
         <strong><%= current_user.email %></strong>
           <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
@@ -65,8 +58,16 @@
           <%= link_to "Sign up", new_user_registration_path %>
           <%= link_to "Sign in", new_user_session_path %>
         <% end %>
-      </nav>
-  </header>
+
+      </ul>
+    </div>
+  </div>
+</ndav>
+
+
+
+
+
 
 
   <div id="container">
