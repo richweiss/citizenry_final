@@ -1,6 +1,6 @@
 video{
-position:fixed; bottom:0; left: 69%; width:100%;
-max-width: 32%; max-height: 100%;
+position:fixed; bottom:3%; left: 66%; width:100%;
+max-width: 33%; max-height: 100%;
 width: auto; height: auto;
 }
 
@@ -23,7 +23,10 @@ width: auto; height: auto;
   font-size: 20px;
   position: fixed;
   top: 15%;
-  right: 2%;
+  right: 1%;
+  border: 3px inset steelblue;
+  border-radius: 10px 10px 10px 10px;
+  padding: 1%;
 }
 
 td {
@@ -39,6 +42,8 @@ th {
     display: inline-block;
     text-decoration: none;
 }
+
+
 
 /* td {
     border-right: 10px solid transparent;
