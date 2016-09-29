@@ -8,7 +8,7 @@
     <span>Categories: <%=petition["issues"].inject(""){|prev, curr| prev += "- #{curr["name"]}"} %></span>
     <p><%= petition["body"] %></p>
     <p>Signature Count: <%= petition["signatureCount"] %></p>
-    <p>Signatured Needed: <%=petition["signaturesNeeded"] %> </p>
+    <p>Signatures Needed: <%=petition["signaturesNeeded"] %> </p>
 
   <% end %>
 </div>
