@@ -10,11 +10,10 @@ The purpose of these petitions is to offer insight into what topics and issues r
 
 
 Tech: 
-    - Primary Language: Ruby
-    - Framework: Rails
-    - CSS: Bootswatch
-    - API hit: HTTparty
-    - User Registration: Devise
-    - Video: Coverr
-    
+    * Primary Language: Ruby
+    * Framework: Rails
+    * CSS: Bootswatch
+    * API hit: HTTparty
+    * User Registration: Devise
+    * Video: Coverr
 
