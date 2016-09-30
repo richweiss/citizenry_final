@@ -28,7 +28,7 @@
       <% @articles.each do |article| %>
         <tr>
           <td><%= article.title %></td>
-          <td><%= article.content %></td>
+          <!-- <td><%= article.content %></td> -->
           <td class="btn btn-primary btn-sm"><%= link_to 'Dialogue', article_path(article) %></td>
           <td class="btn btn-primary btn-sm"><%= link_to 'Fix', edit_article_path(article) %></td>
           <td class="btn btn-primary btn-sm"><%= button_to 'Delete', article_path(article),
