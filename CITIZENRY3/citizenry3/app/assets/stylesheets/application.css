@@ -47,6 +47,9 @@ p1 {
 }
 
 #newcontainer {
+  font-family: Georgia;
+  font-size: 130%;
+  line-height: 1.7em;
   margin-bottom: 5%;
   margin-left: 2%;
   margin-top: 8%;
